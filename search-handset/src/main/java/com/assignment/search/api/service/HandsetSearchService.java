@@ -33,9 +33,9 @@ public class HandsetSearchService {
 		
 			try {
 				return Optional.ofNullable(generateSearchResults(Arrays
-													    .asList(mapper
-															    .readValue(lookupClient
-																	   	   .getHandsets(), HandsetDetails[].class)), chainPrediactes(searchPredicates)));
+										 .asList(mapper
+										 	 .readValue(lookupClient
+												    .getHandsets(), HandsetDetails[].class)), chainPrediactes(searchPredicates)));
 			} catch (Exception e) {
 				// log the exception here
 			}
@@ -59,8 +59,8 @@ public class HandsetSearchService {
 	private List<HandsetDetails> generateSearchResults(List<HandsetDetails> handsetDetails, Predicate<HandsetDetails> searchPredicates) {
 		
 		return handsetDetails.stream()
-					  		 .filter(searchPredicates)
-					  		 .collect(Collectors.toList());
+				     .filter(searchPredicates)
+				     .collect(Collectors.toList());
 		
 		
 		
