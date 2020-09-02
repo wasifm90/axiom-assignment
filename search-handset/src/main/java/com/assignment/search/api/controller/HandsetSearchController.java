@@ -31,14 +31,14 @@ public class HandsetSearchController {
 	@GetMapping
 	@ApiOperation(value = "Search handset by criteria", response = HandsetDetails.class)
 	public ResponseEntity<Optional<List<HandsetDetails>>> fetchHandsets(@RequestParam Optional<String> brand,
-																		@RequestParam Optional<String> phone,
-																		@RequestParam Optional<String> announceDate,
-																		@RequestParam Optional<String> priceEur,
-																		@RequestParam Optional<String> sim,
-																		@RequestParam Optional<String> resolution,
-																		@RequestParam Optional<String> audioJack,
-																		@RequestParam Optional<String> gps,
-																		@RequestParam Optional<String> battery){
+									    @RequestParam Optional<String> phone,
+									    @RequestParam Optional<String> announceDate,
+									    @RequestParam Optional<String> priceEur,
+									    @RequestParam Optional<String> sim,
+									    @RequestParam Optional<String> resolution,
+								            @RequestParam Optional<String> audioJack,
+									    @RequestParam Optional<String> gps,
+									    @RequestParam Optional<String> battery){
 		
 		Map<String, String> searchParams = new HashMap<>();
 
