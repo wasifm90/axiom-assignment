@@ -28,12 +28,12 @@ public class SwaggerConfig {
 
 	private ApiInfo getApiInfo() {
 		return new ApiInfo("search-handset", 
-						   "Handset search implementation in Springboot", 
-						   "0.0.1-SNAPSHOT", 
-						   "", 
-						   new Contact("Wasif", "", "wasif.fmukadam@gmail.com"), 
-						   "", 
-						   "",
-						   Collections.emptyList());
+				   "Handset search implementation in Springboot", 
+				   "0.0.1-SNAPSHOT", 
+				   "", 
+				   new Contact("Wasif", "", "wasif.fmukadam@gmail.com"), 
+				   "", 
+				   "",
+				   Collections.emptyList());
 	}
 }
